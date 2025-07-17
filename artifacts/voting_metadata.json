@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
@@ -217,7 +217,7 @@
 		"compilationTarget": {
 			".deps/remix-tests/vetong.sol": "voting"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -230,11 +230,11 @@
 	},
 	"sources": {
 		".deps/remix-tests/vetong.sol": {
-			"keccak256": "0xdd8a8ea6a5b502d1c0ada9b6580984eb93f8e8f38200e0291e204608a16aada6",
+			"keccak256": "0xa88d022744f5549b2626361c500a05a510057938b8a79c12acb71aec2ab90de7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cdc3e64c013af306b82ddd24bf3975b9f2f02858b8bdd96da6bf913c4579e31b",
-				"dweb:/ipfs/QmZo6RVFjpMsp6BkAiYhgd5SNSQH1qU1hYGM714odWZoWi"
+				"bzz-raw://41ba618092c72b9eac2b06aae9d3acf654f48670248270d2a3573b3271adc5e2",
+				"dweb:/ipfs/QmRpTxa72NKHiTVTwEGQvotLCRK3iWmF7xQG2vznbaXF13"
 			]
 		}
 	},

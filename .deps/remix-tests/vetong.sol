@@ -29,7 +29,7 @@ contract voting {
     string[] public candidates;
 
     // 添加候选人信息
-    function addCandidate(address _address, string memory _username, string memory _gender) public {
+    function addCandidate(address _address, string memory _username, string memory _gender) public onlyOwner {
         houMap[_address] = houUsers(_username, _gender, 0);
     }
 
@@ -60,9 +60,7 @@ contract voting {
         for (uint i = 0; i < candidates.length; i++) {
             address candidateAddress = address(bytes20(bytes(candidates[i])));
             houMap[candidateAddress].piao = 0;
-            
             // 清空投票记录
-            // 实际中可能需要更复杂的逻辑来处理投票记录
         }
         emit VotesReset();
     }
@@ -71,5 +69,4 @@ contract voting {
     function addToCandidates(string memory name1) public onlyOwner {
         candidates.push(name1);
     }
-
 }
